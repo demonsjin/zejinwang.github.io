@@ -1763,6 +1763,16 @@ pre .javascript .function {
     transform: rotateZ(-30deg);
   }
 }
+.post-copyright {
+  margin: 2em 0 0;
+  padding: 0.5em 1em;
+  border-left: 3px solid #ff1700;
+  background-color: #f9f9f9;
+  list-style: none;
+}
+.post-copyright i.fa {
+  font-size: 15px;
+}
 .rtl.post-body p,
 .rtl.post-body a,
 .rtl.post-body h1,
@@ -1921,7 +1931,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #a66f34;
+  background: #9c18fb;
 }
 .feed-link,
 .chat {
@@ -2114,7 +2124,7 @@ pre .javascript .function {
 .with-love {
   display: inline-block;
   margin: 0 5px;
-  color: #808080;
+  color: #ff0000;
 }
 .powered-by,
 .theme-info {
@@ -2914,4 +2924,13 @@ img.img-topic {
   padding: 0;
   float: center;
   clear: center;
+}
+.post {
+  background: #fff;
+  opacity: 1;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  padding: 25px;
+  webkit-box-shadow: 0 0 5px rgba(202,203,203,0.5);
+  moz-box-shadow: 0 0 5px rgba(202,203,204,0.5);
 }
