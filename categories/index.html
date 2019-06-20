@@ -144,6 +144,8 @@
 <meta name="twitter:title" content="categories">
 
 
+  
+
 
   <link rel="alternate" href="/atom.xml" title="Wang's Blog" type="application/atom+xml">
 
@@ -463,6 +465,10 @@
 
           </div>
           
+
+  
+    <div class="comments" id="gitalk-container">
+    </div>
 
   
 
@@ -832,6 +838,35 @@
 
   
 
+
+  
+    
+
+<script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+
+
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css">
+
+
+
+<script src="//cdn.jsdelivr.net/npm/js-md5@0.7.3/src/md5.min.js"></script>
+
+<script>
+  var gitalk = new Gitalk({
+    clientID: '371b698462330193f554',
+    clientSecret: 'c6e7927dbbf7dbe6a8478f01b1666756e0f3f79d',
+    repo: 'zejinwang.github.io',
+    owner: 'zejinwang',
+    admin: ['zejinwang'],
+    id: md5(location.pathname),
+    
+      language: window.navigator.language || window.navigator.userLanguage,
+    
+    distractionFreeMode: 'true'
+  });
+  gitalk.render('gitalk-container');
+</script>
 
   
 
