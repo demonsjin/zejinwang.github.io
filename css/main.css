@@ -1,3 +1,10 @@
+/**
+//修改内容域宽度
+// 修改成你期望的宽度
+$content-desktop = 700px
+// 当视窗超过 1600px 后的宽度
+$content-desktop-large = 1050px
+**/
 /* normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 html {
   line-height: 1.15; /* 1 */
@@ -1980,7 +1987,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ff111b;
+  background: #c8dd6b;
 }
 .feed-link,
 .chat {
@@ -3263,4 +3270,10 @@ img.img-topic {
   padding: 0px;
   -webkit-box-shadow: 0 0 14px rgba(202,203,203,0.5);
   -moz-box-shadow: 0 0 14px rgba(202,203,204,0.5);
+}
+* {
+  cursor: url("http://om8u46rmb.bkt.clouddn.com/sword2.ico"), auto !important;
+}
+:active {
+  cursor: url("http://om8u46rmb.bkt.clouddn.com/sword1.ico"), auto !important;
 }
