@@ -2,6 +2,10 @@
 User-agent: *
 Allow: /
 Allow: /archives/
+Allow: /catgories/
+Allow: /tags/
+
+
 
 Disallow: /vendors/
 Disallow: /js/
