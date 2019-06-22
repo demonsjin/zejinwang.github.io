@@ -14,5 +14,5 @@ Disallow: /fonts/
 Disallow: /vendors/
 Disallow: /fancybox/
 
-Sitemap: http://zejinwang.com/sitemap.xml
-Sitemap: http://zejinwang.com/baidusitemap.xml
+Sitemap: https://www.zejinwang.com/sitemap.xml
+Sitemap: https://www.zejinwang.com/baidusitemap.xml
