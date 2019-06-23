@@ -5,9 +5,9 @@
   <subtitle>Welcome here!</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="https://zejinwang.com/"/>
+  <link href="http://zejinwang.com/"/>
   <updated>2019-06-23T09:40:08.731Z</updated>
-  <id>https://zejinwang.com/</id>
+  <id>http://zejinwang.com/</id>
   
   <author>
     <name>ZejinWang</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>一个有关Wang&#39;s Blog诞生的故事</title>
-    <link href="https://zejinwang.com/2019/06/22/Hexo-%E6%90%AD%E7%AB%99%E4%BD%93%E9%AA%8C/"/>
-    <id>https://zejinwang.com/2019/06/22/Hexo-搭站体验/</id>
+    <link href="http://zejinwang.com/2019/06/22/Hexo-%E6%90%AD%E7%AB%99%E4%BD%93%E9%AA%8C/"/>
+    <id>http://zejinwang.com/2019/06/22/Hexo-搭站体验/</id>
     <published>2019-06-22T02:35:22.000Z</published>
     <updated>2019-06-23T09:40:08.731Z</updated>
     
