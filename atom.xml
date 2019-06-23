@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zejinwang.com/"/>
-  <updated>2019-06-23T07:48:46.817Z</updated>
+  <updated>2019-06-23T08:37:13.841Z</updated>
   <id>https://zejinwang.com/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>1</title>
+    <link href="https://zejinwang.com/2019/06/23/1/"/>
+    <id>https://zejinwang.com/2019/06/23/1/</id>
+    <published>2019-06-23T08:37:13.000Z</published>
+    <updated>2019-06-23T08:37:13.841Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><blockquote class="blockquote-center"><p><em>Some say the world will end in fire,</em></p><p><em>Some say in ice.</em></p><p><em>From what I’ve tasted of desire</em></p><p><em>I hold with those who favor fire.</em></p><p><em>But if it had to perish twice,</em></p><p><em>I think I know enough of hate</em></p><p><em>To say that for destruction ice</em></p><p><em>Is also great</em></p><p><em>And would suffice.</em></p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>一个有关Wang&#39;s Blog诞生的故事</title>
