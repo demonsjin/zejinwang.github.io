@@ -1,3 +1,4 @@
+https://zejinwang.com/2019/06/27/linux常用命令/
 https://zejinwang.com/2019/06/27/vim常用命令/
 https://zejinwang.com/2019/06/25/ios端利用VPS搭建的shadowsocks自制vpn/
 https://zejinwang.com/2019/06/25/Hexo-框架下404页面的设置/
