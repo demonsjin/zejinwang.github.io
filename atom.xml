@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zejinwang.com/"/>
-  <updated>2019-06-27T08:36:30.444Z</updated>
+  <updated>2019-07-02T06:11:55.953Z</updated>
   <id>https://zejinwang.com/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>pytorch常用函数</title>
+    <link href="https://zejinwang.com/2019/07/02/pytorch%E5%B8%B8%E7%94%A8%E5%87%BD%E6%95%B0/"/>
+    <id>https://zejinwang.com/2019/07/02/pytorch常用函数/</id>
+    <published>2019-07-02T06:02:16.000Z</published>
+    <updated>2019-07-02T06:11:55.953Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="squeeze和unsqueeze"><a href="#squeeze和unsqueeze" class="headerlink" title="squeeze和unsqueeze"></a>squeeze和unsqueeze</h1><p><code>torch.``squeeze</code>(<em>input</em>, <em>dim=None</em>, <em>out=None</em>) → Tensor</p><p>Returns a tensor with all the dimensions of <code>input</code> of size 1 removed.</p><p>For example, if input is of shape: (A \times 1 \times B \times C \times 1 \times D)(<em>A</em>×1×<em>B</em>×<em>C</em>×1×<em>D</em>) then the out tensor will be of shape: (A \times B \times C \times D)(<em>A</em>×<em>B</em>×<em>C</em>×<em>D</em>).</p><p>When <code>dim</code> is given, a squeeze operation is done only in the given dimension. If input is of shape: (A \times 1 \times B)(<em>A</em>×1×<em>B</em>),<code>squeeze(input, 0)</code> leaves the tensor unchanged, but <code>squeeze(input, 1)</code> will squeeze the tensor to the shape (A \times B)(<em>A</em>×<em>B</em>).</p><p>NOTE</p><p>The returned tensor shares the storage with the input tensor, so changing the contents of one will change the contents of the other.</p><ul><li><p>Parameters</p><p><strong>input</strong> (<a href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" rel="external nofollow noopener noreferrer" target="_blank"><em>Tensor</em></a>) – the input tensor<strong>dim</strong> (<a href="https://docs.python.org/3/library/functions.html#int" rel="external nofollow noopener noreferrer" target="_blank"><em>int</em></a><em>,</em> <em>optional</em>) – if given, the input will be squeezed only in this dimension<strong>out</strong> (<a href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" rel="external nofollow noopener noreferrer" target="_blank"><em>Tensor</em></a><em>,</em> <em>optional</em>) – the output tensor</p></li></ul><p>Example:</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; x = torch.zeros(2, 1, 2, 1, 2)</span><br><span class="line">&gt;&gt;&gt; x.size()</span><br><span class="line">torch.Size([2, 1, 2, 1, 2])</span><br><span class="line">&gt;&gt;&gt; y = torch.squeeze(x)</span><br><span class="line">&gt;&gt;&gt; y.size()</span><br><span class="line">torch.Size([2, 2, 2])</span><br><span class="line">&gt;&gt;&gt; y = torch.squeeze(x, 0)</span><br><span class="line">&gt;&gt;&gt; y.size()</span><br><span class="line">torch.Size([2, 1, 2, 1, 2])</span><br><span class="line">&gt;&gt;&gt; y = torch.squeeze(x, 1)</span><br><span class="line">&gt;&gt;&gt; y.size()</span><br><span class="line">torch.Size([2, 2, 1, 2])</span><br></pre></td></tr></table></figure><blockquote class="blockquote-center"><p><em>Some say the world will end in fire,</em></p><p><em>Some say in ice.</em></p><p><em>From what I’ve tasted of desire</em></p><p><em>I hold with those who favor fire.</em></p><p><em>But if it had to perish twice,</em></p><p><em>I think I know enough of hate</em></p><p><em>To say that for destruction ice</em></p><p><em>Is also great</em></p><p><em>And would suffice.</em></p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      本文用于Pytorch常用函数用法记录
+    
+    </summary>
+    
+      <category term="pytorch" scheme="https://zejinwang.com/categories/pytorch/"/>
+    
+    
+      <category term="pytorch" scheme="https://zejinwang.com/tags/pytorch/"/>
+    
+      <category term="torch" scheme="https://zejinwang.com/tags/torch/"/>
+    
+  </entry>
   
   <entry>
     <title>linux常用命令</title>
