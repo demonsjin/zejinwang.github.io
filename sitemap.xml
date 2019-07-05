@@ -2,23 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://zejinwang.com/2019/07/02/pytorch%E5%B8%B8%E7%94%A8%E5%87%BD%E6%95%B0/</loc>
+    <loc>https://zejinwang.com/2019/06/27/vim%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</loc>
     
-    <lastmod>2019-07-05T14:34:53.766Z</lastmod>
+    <lastmod>2019-07-05T14:38:06.561Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://zejinwang.com/2019/06/27/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</loc>
     
-    <lastmod>2019-06-27T08:36:30.444Z</lastmod>
+    <lastmod>2019-07-05T14:37:55.082Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://zejinwang.com/2019/06/27/vim%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</loc>
+    <loc>https://zejinwang.com/2019/06/22/Hexo-%E6%90%AD%E7%AB%99%E4%BD%93%E9%AA%8C/</loc>
     
-    <lastmod>2019-06-27T03:49:20.900Z</lastmod>
+    <lastmod>2019-07-05T14:37:38.370Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://zejinwang.com/2019/07/02/pytorch%E5%B8%B8%E7%94%A8%E5%87%BD%E6%95%B0/</loc>
+    
+    <lastmod>2019-07-05T14:34:53.766Z</lastmod>
     
   </url>
   
@@ -40,13 +47,6 @@
     <loc>https://zejinwang.com/google3014b26235e2cf76.html</loc>
     
     <lastmod>2019-06-24T06:27:16.133Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://zejinwang.com/2019/06/22/Hexo-%E6%90%AD%E7%AB%99%E4%BD%93%E9%AA%8C/</loc>
-    
-    <lastmod>2019-06-23T09:40:08.731Z</lastmod>
     
   </url>
   
