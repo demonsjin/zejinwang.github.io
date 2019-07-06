@@ -1,3 +1,5 @@
+https://zejinwang.com/2019/07/06/PCA的理解/
+https://zejinwang.com/2019/07/06/自编码器-AE-和变分编码器-VAE/
 https://zejinwang.com/2019/07/02/pytorch常用函数/
 https://zejinwang.com/2019/06/27/linux常用命令/
 https://zejinwang.com/2019/06/27/vim常用命令/

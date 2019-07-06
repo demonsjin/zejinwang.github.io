@@ -1,6 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[PCA的理解]]></title>
+    <url>%2F2019%2F07%2F06%2FPCA%E7%9A%84%E7%90%86%E8%A7%A3%2F</url>
+    <content type="text"><![CDATA[Some say the world will end in fire,Some say in ice.From what I’ve tasted of desireI hold with those who favor fire.But if it had to perish twice,I think I know enough of hateTo say that for destruction iceIs also greatAnd would suffice.]]></content>
+      <categories>
+        <category>ML</category>
+      </categories>
+      <tags>
+        <tag>ML</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[自编码器(AE)和变分编码器(VAE)]]></title>
+    <url>%2F2019%2F07%2F06%2F%E8%87%AA%E7%BC%96%E7%A0%81%E5%99%A8-AE-%E5%92%8C%E5%8F%98%E5%88%86%E7%BC%96%E7%A0%81%E5%99%A8-VAE%2F</url>
+    <content type="text"><![CDATA[自编码器变分编码器ReferenceSome say the world will end in fire,Some say in ice.From what I’ve tasted of desireI hold with those who favor fire.But if it had to perish twice,I think I know enough of hateTo say that for destruction iceIs also greatAnd would suffice.]]></content>
+      <categories>
+        <category>ML</category>
+      </categories>
+      <tags>
+        <tag>ML</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[pytorch常用函数]]></title>
     <url>%2F2019%2F07%2F02%2Fpytorch%E5%B8%B8%E7%94%A8%E5%87%BD%E6%95%B0%2F</url>
     <content type="text"><![CDATA[squeeze和unsqueezesqueeze()主要用于删除tensor张量中维数为1的指定维度，而unsqueeze用于在指定维度上插入一个新的维数为1的维度。Example:123456789101112&gt;&gt;&gt; x = torch.zeros(2, 1, 2, 1, 2)&gt;&gt;&gt; x.size()torch.Size([2, 1, 2, 1, 2])&gt;&gt;&gt; y1 = torch.squeeze(x)&gt;&gt;&gt; y1.size()torch.Size([2, 2, 2])&gt;&gt;&gt; y1 = torch.squeeze(x, 0)&gt;&gt;&gt; y1.size()torch.Size([2, 1, 2, 1, 2])&gt;&gt;&gt; y1 = torch.squeeze(x, 1)&gt;&gt;&gt; y1.size()torch.Size([2, 2, 1, 2])Example:12345678&gt;&gt;&gt; x = torch.tensor([1, 2, 3, 4])&gt;&gt;&gt; torch.unsqueeze(x, 0)tensor([[ 1, 2, 3, 4]])&gt;&gt;&gt; torch.unsqueeze(x, 1)tensor([[ 1], [ 2], [ 3], [ 4]])MaxPool的ceil_mode参数在介绍MaxPool的ceil_mode参数前，首先介绍下MaxPool2d的相关配置：MaxPool2dExample:123456&gt;&gt;&gt; # pool of square window of size=3, stride=2&gt;&gt;&gt; m = nn.MaxPool2d(3, stride=2)&gt;&gt;&gt; # pool of non-square window&gt;&gt;&gt; m = nn.MaxPool2d((3, 2), stride=(2, 1))&gt;&gt;&gt; input = torch.randn(20, 16, 50, 32)&gt;&gt;&gt; output = m(input)ceil_mode上面官网给出ceil_mode相关介绍：ceil_mode – when True, will use ceil instead of floor to compute the output shape将其置为True，则对输出进行向上取整；默认False情况下，对输出进行向下取整。Example:1234567891011121314151617181920212223242526# coding:utf-8import torchimport torch.nn as nnfrom torch.autograd import Variable class Net(nn.Module): def __init__(self): super(Net, self).__init__() self.maxp = nn.MaxPool2d(kernel_size=2, ceil_mode=False) def forward(self, x): x = self.maxp(x) return x square_size = 6inputs = torch.randn(1, 1, square_size, square_size)for i in range(square_size): inputs[0][0][i] = i * torch.ones(square_size)inputs = Variable(inputs)print(inputs) net = Net()outputs = net(inputs)print(outputs.size())print(outputs)12345678910111213141516171819202122232425262728293031Variable containing: (0 ,0 ,.,.) = 0 0 0 0 0 01 1 1 1 1 12 2 2 2 2 23 3 3 3 3 34 4 4 4 4 45 5 5 5 5 5[torch.FloatTensor of size 1x1x6x6] torch.Size([1, 1, 3, 3])Variable containing: (0 ,0 ,.,.) = 1 1 1 3 3 3 5 5 5 [torch.FloatTensor of size 1x1x3x3]在上面的代码中，无论ceil_mode是True or False，结果都是一样但是如果设置square_size=5，那么当ceil_mode=True123456789101112131415161718192021222324252627Variable containing: (0 ,0 ,.,.) = 0 0 0 0 0 1 1 1 1 1 2 2 2 2 2 3 3 3 3 3 4 4 4 4 4 [torch.FloatTensor of size 1x1x5x5] torch.Size([1, 1, 3, 3]) Variable containing: (0 ,0 ,.,.) = 1 1 1 3 3 3 4 4 4 [torch.FloatTensor of size 1x1x3x3]当ceil_mode=False123456789101112131415161718192021222324252627Variable containing: (0 ,0 ,.,.) = 0 0 0 0 0 1 1 1 1 1 2 2 2 2 2 3 3 3 3 3 4 4 4 4 4 [torch.FloatTensor of size 1x1x5x5] torch.Size([1, 1, 2, 2]) Variable containing: (0 ,0 ,.,.) = 1 1 3 3 [torch.FloatTensor of size 1x1x2x2]ceil模式会把不足square_size的边给保留下来，单独另算。而floor模式则是直接把不足square_size的边给舍弃。Conv2d的dilation参数首先对Conv2d的各项配置参数进行介绍，然后再详细解释dilation参数Conv2d1CLASS torch.nn.Conv2d(in_channels, out_channels, kernel_size, stride=1, padding=0, dilation=1, groups=1, bias=True, padding_mode='zeros')Example:12345678&gt;&gt;&gt; # With square kernels and equal stride&gt;&gt;&gt; m = nn.Conv2d(16, 33, 3, stride=2)&gt;&gt;&gt; # non-square kernels and unequal stride and with padding&gt;&gt;&gt; m = nn.Conv2d(16, 33, (3, 5), stride=(2, 1), padding=(4, 2))&gt;&gt;&gt; # non-square kernels and unequal stride and with padding and dilation&gt;&gt;&gt; m = nn.Conv2d(16, 33, (3, 5), stride=(2, 1), padding=(4, 2), dilation=(3, 1))&gt;&gt;&gt; input = torch.randn(20, 16, 50, 100)&gt;&gt;&gt; output = m(input)dilationdilation参数意味着对卷积核进行膨胀，膨胀的部分用0进行填充，用术语讲称之为空洞卷积。空洞卷积在增加卷积核感受野的同时，参数并未增加，有效减少计算量。计算公式：kernel{\_}dilation = dilation\times(kernel-1)+1在 $kernel=3,dilation=2$ 情况下，卷积核膨胀的效果图如下：ReferencePyTorchPytorch中 maxpool的ceil_modecaffe卷积层延伸：卷积核膨胀详细解析Some say the world will end in fire,Some say in ice.From what I’ve tasted of desireI hold with those who favor fire.But if it had to perish twice,I think I know enough of hateTo say that for destruction iceIs also greatAnd would suffice.]]></content>
