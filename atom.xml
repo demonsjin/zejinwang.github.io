@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zejinwang.com/"/>
-  <updated>2019-07-07T13:30:30.242Z</updated>
+  <updated>2019-07-07T13:32:50.199Z</updated>
   <id>https://zejinwang.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://zejinwang.com/2019/07/07/%E7%90%86%E8%A7%A3KL%E6%95%A3%E5%BA%A6-%E7%9B%B8%E5%AF%B9%E7%86%B5/"/>
     <id>https://zejinwang.com/2019/07/07/理解KL散度-相对熵/</id>
     <published>2019-07-07T08:14:38.000Z</published>
-    <updated>2019-07-07T13:30:30.242Z</updated>
+    <updated>2019-07-07T13:32:50.199Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="信息熵"><a href="#信息熵" class="headerlink" title="信息熵"></a>信息熵</h1><p><strong>信息熵</strong>：描述随机变量不确定性程度的量，对于连续型随机变量称为微分熵。</p><p>信息熵的表达式</p><script type="math/tex;mode=display">H(x)=-\int p(x)ln^{p(x)}dx</script><p>信息熵可认为是表征编码分布 $p(x)$ 所需要的信息编码长度（单位：nats）。</p><p>当使用另一个编码分布函数 $q(x)$ 去编码 $p(x)$ 分布函数负责编码的信息时，由于$q(x)$和$p(x)$之间可能存在差距，导致编码效率不是最高的，因此会付出额外的一些冗余编码作为代价。对应的<strong>总编码长度(交叉熵)</strong>的计算公式：</p><script type="math/tex;mode=display">H(p,q)=-\int p(x)ln^{q(x)}dx</script><p>$H(p.q)$称为交叉熵(cross entropy)，前后两种分布函数进行编码导致的<strong>编码长度差</strong>就是本文需要强调的<strong>KL散度</strong>。</p><h1 id="KL散度"><a href="#KL散度" class="headerlink" title="KL散度"></a>KL散度</h1><p><strong>KL散度(相对熵)：</strong>量化两种概率分布P和Q之间差异的指标。</p><script type="math/tex;mode=display">KL(p||q)=H(p,q)-H(p)=-\int p(x)ln\frac{q(x)}{p(x)}=\int p(x)ln\frac{p(x)}{q(x)}</script><p><strong>KL散度的性质：</strong></p><ol><li>KL散度大于等于<strong>零</strong>；</li><li>KL散度<strong>不满足对称性</strong>，即$KL(p||q) \neq KL(q||p)$，因此其不是两种分布函数之间的距离度量；</li><li>KL散度在机器学习中的<strong>目标是使其最小</strong>，也就是令<strong>一个参数化的分布q区接近真实的分布p</strong>；</li></ol><h1 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h1><p><a href="https://zhuanlan.zhihu.com/p/33194849" rel="external nofollow noopener noreferrer" target="_blank">信息熵和KL散度</a></p><p><a href="https://www.jianshu.com/p/43318a3dc715" rel="external nofollow noopener noreferrer" target="_blank">如何理解K-L散度（相对熵）</a></p><blockquote class="blockquote-center"><p><em>Some say the world will end in fire,</em></p><p><em>Some say in ice.</em></p><p><em>From what I’ve tasted of desire</em></p><p><em>I hold with those who favor fire.</em></p><p><em>But if it had to perish twice,</em></p><p><em>I think I know enough of hate</em></p><p><em>To say that for destruction ice</em></p><p><em>Is also great</em></p><p><em>And would suffice.</em></p></blockquote>]]></content>
     
@@ -32,8 +32,6 @@
     </summary>
     
       <category term="信息论" scheme="https://zejinwang.com/categories/%E4%BF%A1%E6%81%AF%E8%AE%BA/"/>
-    
-      <category term="KL散度" scheme="https://zejinwang.com/categories/%E4%BF%A1%E6%81%AF%E8%AE%BA/KL%E6%95%A3%E5%BA%A6/"/>
     
     
       <category term="熵" scheme="https://zejinwang.com/tags/%E7%86%B5/"/>
