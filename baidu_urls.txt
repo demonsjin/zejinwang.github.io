@@ -1,3 +1,4 @@
+https://zejinwang.com/2019/07/08/LaTex常用命令/
 https://zejinwang.com/2019/07/07/理解KL散度-相对熵/
 https://zejinwang.com/2019/07/06/PCA的理解/
 https://zejinwang.com/2019/07/06/自编码器-AE-和变分编码器-VAE/
